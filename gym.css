@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: #010101;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.logo{
+    font-size: 1.9rem;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+#ff{
+    margin-right: 10px;
+}
+input{
+    padding: 4px;
+    border-radius: 6px;
+}
+nav ul li:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section1{
+    width: 100%;
+    height: 750px;
+}
+.section1::before{
+    content: "";
+    position: absolute;
+    background-image: url("https://th.bing.com/th/id/R.668b511c246bd716b655fa2affcc6064?rik=iaAjUjFwsHh60w&riu=http%3a%2f%2fquotesideas.com%2fwp-content%2fuploads%2f2015%2f01%2fPower-of-music-wallpaper.jpg&ehk=2bYApF8BHlgMws8mc2cuiOUwjBG2HVkjZGixg%2b5N9Zg%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    z-index: -1;
+}
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+}
+.section3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+}
+footer{
+    background-color: #010101;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width:1200px) {
+    .section1{
+        width: 100%;
+        height: 750px;
+    }
+    .section1::before{
+        content: "";
+        position: absolute;
+        background-image: url("https://th.bing.com/th/id/R.668b511c246bd716b655fa2affcc6064?rik=iaAjUjFwsHh60w&riu=http%3a%2f%2fquotesideas.com%2fwp-content%2fuploads%2f2015%2f01%2fPower-of-music-wallpaper.jpg&ehk=2bYApF8BHlgMws8mc2cuiOUwjBG2HVkjZGixg%2b5N9Zg%3d&risl=&pid=ImgRaw&r=0");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 750px;
+        z-index: -1;
+        display: block;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+        flex-direction: column;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section2{
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;   
+    flex-direction: column;
+    text-align: center;
+    }
+    .section3{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 500px;
+        flex-direction: column;
+        text-align: center;
+    }
+    input{
+        padding: 4px;
+        border-radius: 6px;
+        display: none;
+    }
+    .cont2 img{
+        display: block;
+        width: 275px;
+        height: 300px;
+    }
+    .c1 img{
+        display: block;
+        width: 275px;
+        height: 270px;
+    }
+}
